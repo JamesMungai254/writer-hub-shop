@@ -132,7 +132,7 @@ const Home = () => {
                 <img 
                   src={writer.image} 
                   alt={writer.name} 
-                  className="w-full h-48 object-cover"
+                  className="w-12 h-12 object-cover"
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">{writer.name}</h3>
@@ -179,7 +179,7 @@ const Home = () => {
                 <img 
                   src={product.image} 
                   alt={product.name} 
-                  className="w-full h-48 object-cover"
+                  className="w-14 h-12 object-cover"
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">{product.name}</h3>

@@ -38,9 +38,9 @@ const Layout = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <Link to="/" className="text-white hover:text-gray-200">Home</Link>
-            <Link to="/writers" className="text-white hover:text-gray-200">Writers</Link>
-            <Link to="/shop" className="text-white hover:text-gray-200">Shop</Link>
+            <Link to="/" className="text-white hover:text-gray-200">Home |</Link>
+            <Link to="/writers" className="text-white hover:text-gray-200">| Writers |</Link>
+            <Link to="/shop" className="text-white hover:text-gray-200">| Shop || ||</Link>
             
             <div className="flex items-center space-x-3">
               <Link to="/cart" className="text-white relative">
