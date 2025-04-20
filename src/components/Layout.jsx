@@ -26,21 +26,23 @@ const Layout = () => {
       {/* Header */}
       <header className="bg-primary py-4 sticky top-0 z-50">
         <div className="container mx-auto px-4 flex justify-between items-center">
+          
           <Link to="/" className="text-white text-2xl font-bold">WriterHub</Link>
           
-          {/* Mobile menu toggle */}
-          <button 
-            className="md:hidden text-white"
-            onClick={() => setMobileNavOpen(!mobileNavOpen)}
-          >
-            {mobileNavOpen ? "✕" : "☰"}
-          </button>
+          
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             <Link to="/" className="text-white hover:text-gray-200">Home |</Link>
             <Link to="/writers" className="text-white hover:text-gray-200">| Writers |</Link>
             <Link to="/shop" className="text-white hover:text-gray-200">| Shop || ||</Link>
+             {/* Mobile menu toggle */}
+           <button 
+            className="md:hidden text-white"
+            onClick={() => setMobileNavOpen(!mobileNavOpen)}
+          >
+            {mobileNavOpen ? "✕" : "☰"}
+          </button>
             
             <div className="flex items-center space-x-3">
               <Link to="/cart" className="text-white relative">

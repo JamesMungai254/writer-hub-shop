@@ -82,41 +82,56 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose WriterHub?</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-md text-center">
-              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Star className="text-primary h-8 w-8" />
-              </div>
-              <h3 className="text-xl font-bold mb-2">Expert Writers</h3>
-              <p className="text-gray-600">Connect with professional writers with proven expertise in various fields.</p>
-            </div>
-            
-            <div className="bg-white p-8 rounded-lg shadow-md text-center">
-              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="text-primary h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-2">Quality Assurance</h3>
-              <p className="text-gray-600">All our writers are vetted and rated by real students like you.</p>
-            </div>
-            
-            <div className="bg-white p-8 rounded-lg shadow-md text-center">
-              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="text-primary h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-2">Fast Turnaround</h3>
-              <p className="text-gray-600">Get the help you need quickly with our responsive platform.</p>
-            </div>
-          </div>
+      <section className="py-20 bg-gray-50">
+  <div className="container mx-auto px-4 max-w-6xl">
+    <h2 className="text-4xl font-bold text-center mb-16">Why Choose WriterHub?</h2>
+
+    <div className="space-y-12">
+      {/* Expert Writers */}
+      <div className="flex flex-col md:flex-row items-start md:items-center gap-6 bg-white p-8 rounded-xl shadow-lg">
+        <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center">
+          <Star className="text-primary h-8 w-8" />
         </div>
-      </section>
+        <div>
+          <h3 className="text-2xl font-semibold mb-2">Expert Writers</h3>
+          <p className="text-gray-700 text-lg leading-relaxed">
+            WriterHub connects you with a diverse network of professional writers. Whether you need assistance in science, business, humanities, or creative writing, our vetted experts bring proven expertise to every project.
+          </p>
+        </div>
+      </div>
+
+      {/* Quality Assurance */}
+      <div className="flex flex-col md:flex-row items-start md:items-center gap-6 bg-white p-8 rounded-xl shadow-lg">
+        <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center">
+          <svg className="text-primary h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <div>
+          <h3 className="text-2xl font-semibold mb-2">Quality Assurance</h3>
+          <p className="text-gray-700 text-lg leading-relaxed">
+            Each writer on our platform is carefully vetted and consistently reviewed by students. Your satisfaction is our priority, and we maintain high standards through honest feedback and transparent ratings.
+          </p>
+        </div>
+      </div>
+
+      {/* Fast Turnaround */}
+      <div className="flex flex-col md:flex-row items-start md:items-center gap-6 bg-white p-8 rounded-xl shadow-lg">
+        <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center">
+          <svg className="text-primary h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <div>
+          <h3 className="text-2xl font-semibold mb-2">Fast Turnaround</h3>
+          <p className="text-gray-700 text-lg leading-relaxed">
+            Deadlines are important. WriterHub’s responsive platform ensures that you get the help you need right on time — without compromising on quality. We're here when you need us most.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Featured Writers */}
       <section className="py-16">
