@@ -139,7 +139,7 @@ const Writers = () => {
                 <img 
                   src={writer.image} 
                   alt={writer.name} 
-                  className="w-16 h-16 rounded-full object-cover mr-4"
+                  className="w-12 h-12 rounded-full object-cover mr-4"
                 />
                 <div>
                   <h3 className="font-bold text-lg">{writer.name}</h3>
@@ -198,3 +198,4 @@ const Writers = () => {
 };
 
 export default Writers;
+
